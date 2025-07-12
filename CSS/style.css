@@ -940,11 +940,13 @@ button[type="submit"]:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Efek bayangan */
     z-index: 1000;   /* Pastikan tombol berada di atas elemen lain */
     transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi halus saat hover */
+  text-decoration: none; /* HILANGKAN GARIS BAWAH DEFAULT */
 }
 
 .floating-cs-button:hover {
     transform: scale(1.1); /* Sedikit membesar saat dihover */
     background-color: #1DA851; /* Warna sedikit lebih gelap saat dihover */
+  text-decoration: none; /* HILANGKAN GARIS BAWAH DEFAULT */
 }
 
 /* Responsif: Sesuaikan ukuran atau posisi di layar yang lebih kecil */
