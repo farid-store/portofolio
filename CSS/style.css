@@ -923,4 +923,38 @@ button[type="submit"]:hover {
     
   }
 
-  
+  /* --- Floating Customer Service Button --- */
+.floating-cs-button {
+    position: fixed; /* Membuat elemen tetap di posisinya relatif terhadap viewport */
+    bottom: 20px;    /* Jarak dari bawah halaman */
+    right: 20px;     /* Jarak dari kanan halaman */
+    background-color: #25D366; /* Warna hijau WhatsApp */
+    color: white;
+    width: 60px;     /* Lebar tombol */
+    height: 60px;    /* Tinggi tombol */
+    border-radius: 50%; /* Membuat tombol lingkaran */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem; /* Ukuran ikon */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    z-index: 1000;   /* Pastikan tombol berada di atas elemen lain */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi halus saat hover */
+}
+
+.floating-cs-button:hover {
+    transform: scale(1.1); /* Sedikit membesar saat dihover */
+    background-color: #1DA851; /* Warna sedikit lebih gelap saat dihover */
+}
+
+/* Responsif: Sesuaikan ukuran atau posisi di layar yang lebih kecil */
+@media (max-width: 768px) {
+    .floating-cs-button {
+        width: 50px;     /* Ukuran lebih kecil di mobile */
+        height: 50px;
+        font-size: 1.8rem;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
